@@ -54,6 +54,12 @@
         <link rel="stylesheet" type="text/css" href="/static/login.css">
         <div class="body">
             <div class="usernoob"> Sign In to Get Started</div>
+            <form action="{{ url_for('login') }}" method="post">
+                  <div class="msg">{{ msg }}</div>
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
+                    <input type="submit" class="btn" value="Sign In"></br></br>
+            </form>
             <p class="signup">Don't have an account? Create one
                 <a  href="/register">here</a>  
             </p>
